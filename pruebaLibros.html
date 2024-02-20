@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <title>Document</title>
+
+    <style>
+ *{
+    padding: 0;
+    margin: 0;
+   
+}
+
+/* cabesera */
+header{
+    display: flex;
+    position: fixed;z-index: 1000;
+    width: 100%;
+    height: 75px;
+  
+    justify-content: space-between ;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    color: #FFF;
+    background: #64273B;
+
+}
+header nav{
+    padding-right: 120px ; 
+}
+
+
+
+.logo img{
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.logo{
+    display: flex;
+    align-items: center; 
+    font-size: 26px;
+    color: #FFF;
+    padding-left: 120px ;
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+.logo h2{
+    margin-bottom: 0;
+    line-height:0;
+
+}
+
+a{
+    text-decoration: none;
+    color: #c8c8c8;
+
+}
+
+nav a{
+    position: relative;
+    margin-right: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+nav a:after{
+   content: "";
+   position: absolute;
+   background-color: #FFF;
+   height: 3px;
+   width: 0;
+   left: 0;
+   bottom:-10px;
+   transition: 0.3s;
+}
+
+nav a:hover{
+    color: #FFF;
+
+}
+
+nav a:hover:after{
+    width: 100%;
+}
+
+/* fin de cabeseara */
+
+main{
+    background: #F5EEE6;
+    height: auto;
+
+   
+  
+
+}
+
+main h2{
+    font-family: 'Bebas Neue';
+    font-size: 64px;
+    color: #64273B;
+    padding: 50px 0px;
+    margin-top: 75px;
+
+}
+
+/* pie de pagina */
+footer{
+    display: flex;
+    background: black ;
+    align-items: flex-end;
+    height: 100px;
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 15px ;
+    padding-top: 15px;
+   
+    box-sizing: unset;
+
+}
+
+footer h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    margin-bottom: 15px;
+    margin-right: 50px;
+    margin-left: 50px;
+
+
+}
+
+hr{
+    background-color: #FFF;
+    width: 600px;
+    height: 1px;
+    margin-top: 16px;
+    opacity: unset;
+}
+
+.pie-pagina{
+    display: flex;
+    
+}
+
+/* fin de pie de pagina */
+
+/* pagina de libros  */
+
+.main-libros{
+    padding: 0px 120px 120px 120px;
+    margin: 0;
+    box-sizing: border-box; 
+
+}
+
+
+.libro{
+    background-color: #64273B;
+    padding: 15px;
+    width: auto;
+    margin-bottom: 24px;
+    box-sizing: border-box; 
+   
+   
+}
+
+.libro img{
+    width: 100%;
+
+   
+}
+.libro h3{
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+.libro .precio{
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 300;
+   
+
+    padding-bottom: 15px;
+}
+ .boton{
+
+    border-radius: 10px;
+    background: #AD8286;
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    
+
+    padding: 3px 8px;
+}
+
+/* fin de pagina de libros  */
+
+    </style>
+</head>
+<body>
+
+    <header>  
+        <a href="../index.html" class="logo">
+            <img src="./img/logo.jpg" alt="logo de la pagina"/>
+            <h2>ESTOICISMO</h2>
+        </a>
+        <nav>
+            <a href="../index.html" class="link">Home</a>
+            <a href="./ideasPrincipales.html" class="link">Ideas Principales</a>              
+            <a href="./referentes.html" class="link">Referentes</a>
+            <a href="./libros.html" class="link">Libros</a>
+            <a href="./contactos.html" class="link">Contactos</a>
+        </nav>
+    </header>
+    <main class="main-libros">
+        <h2>Libros</h2>
+        <section>
+            <div class="conteiner">
+
+                <div class="row justify-content-center">
+                    <div class="col-2">
+                        <div class="libro">
+                            <img src="./img/libroMeditaciones.jpeg" alt="portada del libro">
+                            <h3>Meditaciones</h3>
+                            <p class="precio">$20.000</p>
+                            <a href="" class="boton">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="libro">
+                            <img src="./img/libroMeditaciones.jpeg" alt="portada del libro">
+                            <h3>Meditaciones</h3>
+                            <p class="precio">$20.000</p>
+                            <a href="" class="boton">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="libro">
+                            <img src="./img/libroMeditaciones.jpeg" alt="portada del libro">
+                            <h3>Meditaciones</h3>
+                            <p class="precio">$20.000</p>
+                            <a href="" class="boton">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="libro">
+                            <img src="./img/libroMeditaciones.jpeg" alt="portada del libro">
+                            <h3>Meditaciones</h3>
+                            <p class="precio">$20.000</p>
+                            <a href="" class="boton">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="libro">
+                            <img src="./img/libroMeditaciones.jpeg" alt="portada del libro">
+                            <h3>Meditaciones</h3>
+                            <p class="precio">$20.000</p>
+                            <a href="" class="boton">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="libro">
+                            <img src="./img/libroMeditaciones.jpeg" alt="portada del libro">
+                            <h3>Meditaciones</h3>
+                            <p class="precio">$20.000</p>
+                            <a href="" class="boton">Comprar</a>
+                        </div>
+                    </div>
+                    
+                    
+
+                </div>
+                
+    
+                
+            </div>
+
+            <div class="conteiner">
+
+                <div class="row justify-content-center">
+                    <div class="col-2">
+                        <div class="libro">
+                            <img src="./img/libroMeditaciones.jpeg" alt="portada del libro">
+                            <h3>Meditaciones</h3>
+                            <p class="precio">$20.000</p>
+                            <a href="" class="boton">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="libro">
+                            <img src="./img/libroMeditaciones.jpeg" alt="portada del libro">
+                            <h3>Meditaciones</h3>
+                            <p class="precio">$20.000</p>
+                            <a href="" class="boton">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="libro">
+                            <img src="./img/libroMeditaciones.jpeg" alt="portada del libro">
+                            <h3>Meditaciones</h3>
+                            <p class="precio">$20.000</p>
+                            <a href="" class="boton">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="libro">
+                            <img src="./img/libroMeditaciones.jpeg" alt="portada del libro">
+                            <h3>Meditaciones</h3>
+                            <p class="precio">$20.000</p>
+                            <a href="" class="boton">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="libro">
+                            <img src="./img/libroMeditaciones.jpeg" alt="portada del libro">
+                            <h3>Meditaciones</h3>
+                            <p class="precio">$20.000</p>
+                            <a href="" class="boton">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="libro">
+                            <img src="./img/libroMeditaciones.jpeg" alt="portada del libro">
+                            <h3>Meditaciones</h3>
+                            <p class="precio">$20.000</p>
+                            <a href="" class="boton">Comprar</a>
+                        </div>
+                    </div>
+                    
+                    
+
+                </div>
+                
+    
+                
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="pie-pagina">
+            <hr><h2>ESTOICISMO</h2><hr>
+        </div>
+        
+        <p>© 2024 Estoicismo, todos los derechos reservados.</p>
+        
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
