@@ -212,6 +212,51 @@ hr{
 
 /* fin de pagina de libros  */
 
+
+
+
+
+#cont-grid{
+    display: grid;
+    grid-template-columns: 5% 45% 45% 5%;
+    grid-template-rows: 5% auto 25px 500px 25px auto  25px 500px 25px auto 5% ;
+    grid-template-areas: 
+    "fondo fondo fondo fondo"
+    "fondo texto texto fondo"
+    "fondo fondo-blanco articulo fondo"
+    "fondo-articulo fondo-articulo articulo fondo-negro"
+    "fondo fondo-blanco articulo fondo"
+    "fondo cita cita fondo"
+    "fondo articulo fondo-blanco fondo"
+    "fondo-negro articulo fondo-articulo fondo-articulo"
+    "fondo articulo fondo-blanco fondo"
+    "fondo texto texto fondo"
+    "fondo fondo fondo fondo"
+
+ 
+}
+#fondo-blanco{
+    background-color: #FFF;
+    grid-area: fondo-blanco;
+}
+#fondo-negro{
+    background-color: black;
+    grid-area: fondo-negro;
+}
+#fondo-principal{
+    background-color:  #F5EEE6;
+    grid-area:fondo;
+}
+
+
+
+
+
+
+
+
+
+
     </style>
 </head>
 <body>
@@ -354,6 +399,19 @@ hr{
                 
             </div>
             
+        </section>
+
+
+
+
+        <section id="cont-grid">
+            <div id="fondo-principal"></div>
+            <div id="fondo-blanco"></div>
+            <div id="fondo-negro"></div>
+            <div id="texto"></div>
+            <div id="articulo"></div>
+            <div id="fondo-articulo"></div>
+            <div id="cita"></div>
         </section>
     </main>
     <footer>
