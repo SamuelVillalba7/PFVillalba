@@ -947,7 +947,7 @@ iframe{
 .main-contacto{
    
     background-color:#0C0B10 ;
-    height: 100vh;
+    height: auto;
     padding-left: 0;
     padding-right: 0;
    
@@ -1010,6 +1010,10 @@ textarea::placeholder{
     background-image: url(../img/fondocontacto.png);
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: bottom;
+    display: flex;
+    align-items: end;
+    
 }
 
 .foto{
@@ -1023,8 +1027,10 @@ textarea::placeholder{
 
 .cont-contacto h2{
     color: #FFF;
-    padding-left: 12px;
-    padding-bottom: 5px;
+    padding-left: 12px; 
+     padding-bottom: 20px;
+    margin-top: 75px;
+    padding-top: 55px;
    
 }
 .cont-contacto p{
