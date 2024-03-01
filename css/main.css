@@ -60,6 +60,24 @@ header .logo h2 {
   margin-bottom: 0;
   line-height: 0;
 }
+@media (max-width: 576px) {
+  header {
+    max-width: 100%;
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header nav {
+    padding-right: 0px;
+    font-size: 12px;
+  }
+  header nav a {
+    margin-right: 5px;
+  }
+  header .logo {
+    padding-left: 0px;
+  }
+}
 
 /* fin de cabeseara */
 main {
@@ -80,6 +98,21 @@ main h2 {
 main p {
   font-size: var(--tamanio-p-desktop);
   font-family: var(--fuente-texto);
+}
+@media (max-width: 576px) {
+  main {
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+main h2 {
+  font-size: 32px;
+  padding: 0px;
+  padding-top: 40px;
+}
+main p {
+  font-size: var(--tamanio-p-phone);
 }
 
 footer {
@@ -112,12 +145,46 @@ footer hr {
 footer .pie-pagina {
   display: flex;
 }
+@media (max-width: 576px) {
+  footer {
+    height: 100px;
+    padding-bottom: 0px;
+    padding-top: 0;
+    box-sizing: unset;
+  }
+  footer h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 26px;
+    margin-bottom: 15px;
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+  footer p {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+  }
+  footer hr {
+    width: 7rem;
+    margin-top: 10px;
+  }
+  footer .pie-pagina {
+    display: flex;
+  }
+}
 
 /* home */
 .main-home {
   padding: 0;
   margin: 0;
   padding-bottom: 120px;
+}
+@media (max-width: 576px) {
+  .main-home {
+    padding: 0;
+    margin: 0;
+    height: auto;
+  }
 }
 
 #hero {
@@ -138,6 +205,18 @@ footer .pie-pagina {
 #hero h3 {
   font-size: 36px;
 }
+@media (max-width: 576px) {
+  #hero {
+    height: 45vh;
+    margin-top: 100px;
+  }
+  #hero h1 {
+    font-size: 42px;
+  }
+  #hero h3 {
+    font-size: 20px;
+  }
+}
 
 .introduccion {
   margin: 120px 120px 0px 120px;
@@ -151,6 +230,20 @@ footer .pie-pagina {
 .introduccion h2 {
   padding-top: 10px;
   margin-top: 0px;
+}
+@media (max-width: 576px) {
+  .introduccion {
+    margin: 12px 12px 0px 12px;
+    padding: 10px 10px 50px 10px;
+  }
+  .introduccion:last-of-type {
+    margin: 0px 12px;
+    padding: 375px 10px 10px 10px;
+  }
+  .introduccion h2 {
+    padding-top: 10px;
+    margin-top: 0px;
+  }
 }
 
 article .fondo-articulo {
@@ -207,6 +300,49 @@ article:last-of-type .fondo-articulo .texto-articulo {
   right: 50%;
   left: unset;
 }
+@media (max-width: 576px) {
+  article .fondo-articulo {
+    background-image: url(../img/fotoArticulo1.jpg);
+    width: 95%;
+    height: 250px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  article .fondo-articulo .texto-articulo {
+    width: 100%;
+    height: 350px;
+    padding: 0px;
+    left: unset;
+    top: 250px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  article .fondo-articulo .texto-articulo .titulo-art {
+    font-size: 26px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: unset;
+  }
+  article .fondo-articulo .texto-articulo .cuerpo-art {
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-bottom: unset;
+  }
+  article .fondo-articulo .texto-articulo .boton-articulo {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-bottom: unset;
+  }
+  article:last-of-type .fondo-articulo {
+    background-image: url(../img/fotoArticulo2.jpg);
+  }
+  article:last-of-type .fondo-articulo .texto-articulo {
+    right: unset;
+  }
+}
 
 .cont-cita .cita {
   font-family: var(--fuente-titulo);
@@ -223,22 +359,28 @@ article:last-of-type .fondo-articulo .texto-articulo {
   font-weight: 600;
   font-family: var(--fuente-texto);
 }
+@media (max-width: 576px) {
+  .cont-cita .cita {
+    font-size: 24px;
+    text-align: center;
+    margin: 0px 12px;
+    padding: 405px 50px 30px 50px;
+  }
+  .cont-cita .filosofo {
+    padding: 0px 50px 50px 50px;
+    margin: 0px 12px;
+    font-size: 12px;
+  }
+}
 
 /* fin de home */
 /* ideas principales */
-iframe {
-  width: 90%;
-  box-sizing: unset;
-  padding: 5%;
-  height: 550px;
-}
-
-.cont-ideas {
+.main-ideas .cont-ideas {
   display: flex;
   background-color: #FFF;
   padding: 30px;
 }
-.cont-ideas .indice {
+.main-ideas .cont-ideas .indice {
   position: sticky;
   top: 120px;
   left: 0;
@@ -251,27 +393,85 @@ iframe {
   border-radius: 20px;
   font-family: var(--fuente-texto);
 }
-.cont-ideas .indice .titulo-indice {
+.main-ideas .cont-ideas .indice .titulo-indice {
   padding: 10px 0px;
   font-size: 20px;
   text-align: center;
   list-style-type: none;
   font-weight: 700;
 }
-.cont-ideas .textoPrincipal {
+.main-ideas .cont-ideas .textoPrincipal {
   width: 80%;
   padding: 0px 30px;
   margin-left: 40px;
 }
-.cont-ideas .textoPrincipal h3 {
+.main-ideas .cont-ideas .textoPrincipal h3 {
   font-size: 48px;
   font-family: var(--fuente-titulo);
   margin: 15px 0px;
 }
+.main-ideas .cont-ideas .textoPrincipal iframe {
+  width: 90%;
+  box-sizing: unset;
+  padding: 5%;
+  height: 550px;
+}
+@media (max-width: 576px) {
+  .main-ideas {
+    padding: 0;
+    margin: 0;
+    height: auto;
+  }
+  .main-ideas h2 {
+    padding-left: 12px;
+    margin-bottom: 8px;
+    margin-top: 87px;
+  }
+  .main-ideas .cont-ideas {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    padding: 10px;
+    margin: 12px;
+    margin-top: 0px;
+  }
+  .main-ideas .cont-ideas .indice {
+    position: unset;
+    top: unset;
+    left: unset;
+    width: 100%;
+    height: 400px;
+    padding: 0px;
+    box-sizing: unset;
+  }
+  .main-ideas .cont-ideas .indice nav {
+    padding: 12px;
+  }
+  .main-ideas .cont-ideas .indice .titulo-indice {
+    padding: 10px 0px;
+    font-size: 20px;
+    text-align: center;
+    list-style-type: none;
+    font-weight: 700;
+  }
+  .main-ideas .cont-ideas .textoPrincipal {
+    width: unset;
+    padding: 0px;
+    margin-left: 0px;
+  }
+  .main-ideas .cont-ideas .textoPrincipal h3 {
+    font-size: 38px;
+    margin: 15px 0px;
+  }
+  .main-ideas .cont-ideas .textoPrincipal iframe {
+    height: 200px;
+    box-sizing: unset;
+  }
+}
 
 /* fin de ideas principales */
 /*pagina de referentes */
-.referente {
+.main-referentes .referente {
   display: flex;
   background-color: #d9d9d9;
   width: 100%;
@@ -282,49 +482,79 @@ iframe {
   box-sizing: unset;
   padding-right: 10px;
 }
-.referente img {
+.main-referentes .referente img {
   border: #d9d9d9 solid 1px;
   height: 300px;
   margin: 0;
   border-radius: 10px;
 }
-.referente .texto-referente h3 {
+.main-referentes .referente .texto-referente h3 {
   color: var(--color-principal);
   font-family: var(--fuente-titulo);
   font-size: 32px;
   padding-top: 27px;
 }
-.referente:last-of-type {
+.main-referentes .referente:last-of-type {
   margin-bottom: 0px;
+}
+@media (max-width: 576px) {
+  .main-referentes {
+    padding: 12px;
+    height: auto;
+  }
+  .main-referentes .referente {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin-bottom: 60px;
+    border: #64273B solid 5px;
+    border-radius: 12px;
+    padding: 5px;
+  }
+  .main-referentes .referente img {
+    border: #d9d9d9 solid 1px;
+    height: 280px;
+    width: 100%;
+    margin: 0px;
+  }
+  .main-referentes .referente .texto-referente h3 {
+    padding: 27px 0px;
+    text-align: center;
+  }
+  .main-referentes .referente .texto-referente p {
+    font-size: 18px;
+    padding: 12px;
+  }
 }
 
 /* fin de pagina de referentes */
 /* pagina de libros  */
-.libro {
+.main-libros .libro {
   background-color: var(--color-principal);
   padding: 15px;
   width: auto;
   margin-bottom: 24px;
   box-sizing: border-box;
 }
-.libro img {
+.main-libros .libro img {
   width: 100%;
 }
-.libro h3 {
+.main-libros .libro h3 {
   color: #FFF;
   font-family: var(--fuente-texto);
   font-size: 16px;
   font-weight: 600;
   padding: 10px 0px;
 }
-.libro .precio {
+.main-libros .libro .precio {
   color: #FFF;
   font-family: var(--fuente-texto);
   font-size: 16px;
   font-weight: 300;
   padding-bottom: 15px;
 }
-.libro .boton {
+.main-libros .libro .boton {
   border-radius: 10px;
   background: #AD8286;
   color: #FFF;
@@ -332,6 +562,46 @@ iframe {
   font-size: 16px;
   font-weight: 400;
   padding: 3px 8px;
+}
+@media (max-width: 576px) {
+  .main-libros {
+    padding: 12px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  .main-libros .libro {
+    background-color: #64273B;
+    padding: 15px;
+    width: auto;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+  }
+  .main-libros .libro img {
+    width: 100%;
+  }
+  .main-libros .libro h3 {
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 0px 0px 0px;
+  }
+  .main-libros .libro .precio {
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 0px;
+  }
+  .main-libros .libro .boton {
+    border-radius: 10px;
+    background: #AD8286;
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 400;
+    padding: 3px 8px;
+  }
 }
 
 /* fin de pagina de libros  */
@@ -410,6 +680,85 @@ iframe {
   padding-left: 10px;
   font-family: var(--fuente-texto);
   font-size: 16px;
+}
+@media (max-width: 576px) {
+  .main-contacto {
+    background-color: #0C0B10;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .main-contacto .cont-contacto {
+    color: #FFF;
+    height: unset;
+    display: unset;
+  }
+  .main-contacto .cont-contacto h2 {
+    color: #FFF;
+    padding-left: 12px;
+    padding-bottom: 20px;
+    margin-top: 75px;
+    padding-top: 55px;
+  }
+  .main-contacto .cont-contacto p {
+    padding-left: 12px;
+    font-size: 20px;
+    padding-right: 12px;
+    margin-bottom: 0;
+  }
+  .main-contacto .cont-contacto .foto {
+    margin-top: unset;
+  }
+  .main-contacto .cont-contacto .foto img {
+    width: 0;
+  }
+  .main-contacto .cont-contacto .formulario {
+    padding: 30px 30px 0px 30px;
+    margin-top: unset;
+    background-image: url(../img/fondocontacto.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    display: flex;
+    align-items: end;
+  }
+  .main-contacto .cont-contacto .formulario form {
+    background-color: unset;
+    width: 100%;
+    padding: 0px;
+    font-size: 16px;
+  }
+  .main-contacto .cont-contacto .formulario form input {
+    width: 100%;
+    margin: 20px 0px;
+    height: 50px;
+    border-radius: 10px;
+  }
+  .main-contacto .cont-contacto .formulario form label {
+    width: 100%;
+  }
+  .main-contacto .cont-contacto .formulario form textarea {
+    width: 100%;
+    margin: 10px 0px;
+    height: 65px;
+    border-radius: 10px;
+  }
+  .main-contacto .cont-contacto .formulario form textarea ::placeholder {
+    padding-top: 10px;
+  }
+  .main-contacto .cont-contacto .formulario form ::placeholder {
+    color: brown;
+    padding-left: 10px;
+    font-family: "Montserrat";
+    font-size: 16px;
+  }
+  .main-contacto .cont-contacto .formulario form .boton-formulario {
+    width: 100px;
+    background-color: #64273B;
+    font-family: "Montserrat";
+    color: #FFF;
+    border: none;
+  }
 }
 
 /* fin de pagina de contacto */
