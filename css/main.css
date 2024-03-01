@@ -1,0 +1,417 @@
+/* cabesera */
+header {
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 75px;
+  justify-content: space-between;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  color: #FFF;
+  background: var(--color-principal);
+  box-sizing: unset;
+}
+header a {
+  text-decoration: none;
+  color: #c8c8c8;
+}
+header nav {
+  padding-right: 120px;
+}
+header nav a {
+  position: relative;
+  margin-right: 10px;
+  font-family: var(--fuente-texto);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+header nav a:after {
+  content: "";
+  position: absolute;
+  background-color: #FFF;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+header nav a:hover {
+  color: #FFF;
+}
+header nav a:hover:after {
+  width: 100%;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  color: #FFF;
+  padding-left: 120px;
+  font-family: var(--fuente-titulo);
+}
+header .logo img {
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+header .logo h2 {
+  margin-bottom: 0;
+  line-height: 0;
+}
+
+/* fin de cabeseara */
+main {
+  background: #F5EEE6;
+  height: auto;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-bottom: 120px;
+  box-sizing: unset;
+}
+main h2 {
+  font-family: var(--fuente-titulo);
+  font-size: var(--tamanio-h2-desktop);
+  color: var(--color-principal);
+  padding: 50px 0px;
+  margin-top: 75px;
+}
+main p {
+  font-size: var(--tamanio-p-desktop);
+  font-family: var(--fuente-texto);
+}
+
+footer {
+  display: flex;
+  background: black;
+  align-items: flex-end;
+  height: 100px;
+  color: #FFF;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  box-sizing: unset;
+}
+footer h2 {
+  font-family: var(--fuente-titulo);
+  font-size: 36px;
+  margin-bottom: 15px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+footer hr {
+  background-color: #FFF;
+  width: 600px;
+  height: 1px;
+  margin-top: 16px;
+  opacity: unset;
+}
+footer .pie-pagina {
+  display: flex;
+}
+
+/* home */
+.main-home {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 120px;
+}
+
+#hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/estoas.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFF;
+  font-family: var(--fuente-titulo);
+}
+#hero h1 {
+  font-size: 120px;
+}
+#hero h3 {
+  font-size: 36px;
+}
+
+.introduccion {
+  margin: 120px 120px 0px 120px;
+  background-color: #FFF;
+  padding: 30px 30px 100px 30px;
+}
+.introduccion:last-of-type {
+  margin: 0px 120px;
+  padding: 100px 30px 30px 30px;
+}
+.introduccion h2 {
+  padding-top: 10px;
+  margin-top: 0px;
+}
+
+article .fondo-articulo {
+  background-image: url(../img/f1.jpg);
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+article .fondo-articulo .texto-articulo {
+  width: 30%;
+  height: 520px;
+  background-color: var(--color-principal);
+  padding: 50px;
+  position: absolute;
+  left: 50%;
+  top: -60px;
+  box-sizing: unset;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+article .fondo-articulo .texto-articulo .titulo-art {
+  font-size: 42px;
+  font-family: var(--fuente-titulo);
+  color: #FFF;
+  margin-bottom: 30px;
+}
+article .fondo-articulo .texto-articulo .cuerpo-art {
+  color: #FFF;
+  margin-bottom: 40px;
+}
+article .fondo-articulo .texto-articulo .boton-articulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #AD8286;
+  color: #FFF;
+  font-family: var(--fuente-texto);
+  font-size: 20px;
+  font-weight: 400;
+}
+article .fondo-articulo .texto-articulo .boton-articulo a {
+  color: #FFF;
+}
+article:last-of-type .fondo-articulo {
+  background-image: url(../img/f2.jpg);
+}
+article:last-of-type .fondo-articulo .texto-articulo {
+  right: 50%;
+  left: unset;
+}
+
+.cont-cita .cita {
+  font-family: var(--fuente-titulo);
+  font-size: 48px;
+  text-align: center;
+  margin: 0px 120px;
+  background-color: #FFF;
+  padding: 170px 100px 30px 100px;
+}
+.cont-cita .filosofo {
+  padding: 0px 100px 170px 100px;
+  margin: 0px 120px;
+  background-color: #FFF;
+  font-weight: 600;
+  font-family: var(--fuente-texto);
+}
+
+/* fin de home */
+/* ideas principales */
+iframe {
+  width: 90%;
+  box-sizing: unset;
+  padding: 5%;
+  height: 550px;
+}
+
+.cont-ideas {
+  display: flex;
+  background-color: #FFF;
+  padding: 30px;
+}
+.cont-ideas .indice {
+  position: sticky;
+  top: 120px;
+  left: 0;
+  width: 20%;
+  height: 400px;
+  padding: 30px;
+  background-color: var(--color-principal);
+  color: #FFF;
+  box-sizing: unset;
+  border-radius: 20px;
+  font-family: var(--fuente-texto);
+}
+.cont-ideas .indice .titulo-indice {
+  padding: 10px 0px;
+  font-size: 20px;
+  text-align: center;
+  list-style-type: none;
+  font-weight: 700;
+}
+.cont-ideas .textoPrincipal {
+  width: 80%;
+  padding: 0px 30px;
+  margin-left: 40px;
+}
+.cont-ideas .textoPrincipal h3 {
+  font-size: 48px;
+  font-family: var(--fuente-titulo);
+  margin: 15px 0px;
+}
+
+/* fin de ideas principales */
+/*pagina de referentes */
+.referente {
+  display: flex;
+  background-color: #d9d9d9;
+  width: 100%;
+  height: auto;
+  margin-bottom: 60px;
+  border: var(--color-principal) solid 5px;
+  border-radius: 12px;
+  box-sizing: unset;
+  padding-right: 10px;
+}
+.referente img {
+  border: #d9d9d9 solid 1px;
+  height: 300px;
+  margin: 0;
+  border-radius: 10px;
+}
+.referente .texto-referente h3 {
+  color: var(--color-principal);
+  font-family: var(--fuente-titulo);
+  font-size: 32px;
+  padding-top: 27px;
+}
+.referente:last-of-type {
+  margin-bottom: 0px;
+}
+
+/* fin de pagina de referentes */
+/* pagina de libros  */
+.libro {
+  background-color: var(--color-principal);
+  padding: 15px;
+  width: auto;
+  margin-bottom: 24px;
+  box-sizing: border-box;
+}
+.libro img {
+  width: 100%;
+}
+.libro h3 {
+  color: #FFF;
+  font-family: var(--fuente-texto);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+.libro .precio {
+  color: #FFF;
+  font-family: var(--fuente-texto);
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 15px;
+}
+.libro .boton {
+  border-radius: 10px;
+  background: #AD8286;
+  color: #FFF;
+  font-family: var(--fuente-texto);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 3px 8px;
+}
+
+/* fin de pagina de libros  */
+/* pagina contacto */
+.main-contacto {
+  background-color: #0C0B10;
+  height: 100vh;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+.main-contacto .cont-contacto {
+  color: #FFF;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "texto texto formulario" "foto foto formulario";
+}
+.main-contacto .cont-contacto h2 {
+  color: #FFF;
+  padding-left: 120px;
+}
+.main-contacto .cont-contacto p {
+  color: #FFF;
+  padding-left: 120px;
+  font-size: 24px;
+  padding-right: 30px;
+}
+.main-contacto .cont-contacto .foto {
+  grid-area: foto;
+  margin-top: 50px;
+}
+.main-contacto .cont-contacto .texto-contactos {
+  grid-area: texto;
+}
+.main-contacto .cont-contacto .formulario {
+  grid-area: formulario;
+  padding-top: 80px;
+  margin-top: 100px;
+}
+.main-contacto .cont-contacto .formulario form {
+  width: 550px;
+  padding: 20px;
+  background-color: #0C0B10;
+  color: #FFF;
+  font-family: var(--fuente-texto);
+  font-size: 16px;
+}
+.main-contacto .cont-contacto .formulario form input {
+  width: 100%;
+  margin: 20px 0px;
+  height: 50px;
+  border-radius: 10px;
+}
+.main-contacto .cont-contacto .formulario form label {
+  width: 100%;
+}
+.main-contacto .cont-contacto .formulario form .boton-formulario {
+  width: 100px;
+  background-color: var(--color-principal);
+  font-family: var(--fuente-texto);
+  color: #FFF;
+  border: none;
+}
+.main-contacto .cont-contacto .formulario form textarea {
+  width: 100%;
+  margin: 10px 0px;
+  height: 65px;
+  border-radius: 10px;
+}
+.main-contacto .cont-contacto .formulario form textarea ::placeholder {
+  padding-top: 10px;
+}
+.main-contacto .cont-contacto .formulario form ::placeholder {
+  color: var(--color-principal);
+  padding-left: 10px;
+  font-family: var(--fuente-texto);
+  font-size: 16px;
+}
+
+/* fin de pagina de contacto */
+
+/*# sourceMappingURL=main.css.map */
