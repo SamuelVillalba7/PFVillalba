@@ -235,7 +235,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image:url(../img/estoas.png);
+    background-image:url(../img/home/estoas.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: #FFF;
@@ -295,7 +295,7 @@ footer{
 
 article{
     .fondo-articulo{
-        background-image: url(../img/f1.jpg);
+        background-image: url(../img/home/f1.jpg);
         width: 100%;
         height: 500px;
         background-repeat: no-repeat;
@@ -351,7 +351,7 @@ article{
     }
 
     &:last-of-type .fondo-articulo{
-        background-image: url(../img/f2.jpg);   
+        background-image: url(../img/home/f2.jpg);   
         .texto-articulo{
             right: 50%;
             left: unset;
@@ -361,7 +361,7 @@ article{
 
     @include media-query-mobile(){
         .fondo-articulo{
-            background-image: url(../img/fotoArticulo1.jpg);
+            background-image: url(../img/home/fotoArticulo1.jpg);
             width: 95%;
             height: 250px;
             margin-left: 2.5%;
@@ -402,7 +402,7 @@ article{
          
         }
         &:last-of-type .fondo-articulo{
-            background-image: url(../img/fotoArticulo2.jpg);    
+            background-image: url(../img/home/fotoArticulo2.jpg);    
         }
         &:last-of-type .fondo-articulo .texto-articulo{
             right: unset;
@@ -615,7 +615,7 @@ article{
             padding: 5px;
             img{
                 border: #d9d9d9 solid 1px;
-                  height: 280px;
+                  height: auto;
                   width: 100%;
                   margin:0px;
                 
