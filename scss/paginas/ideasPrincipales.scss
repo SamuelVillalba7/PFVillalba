@@ -1,0 +1,102 @@
+
+.main-ideas{
+    .cont-ideas{
+        display: flex;
+        background-color: #FFF;
+        padding: 30px;
+    
+        .indice{
+            position: sticky;
+            top: 120px;
+            left: 0;
+            width: 20%;
+            height: 400px;
+            padding: 30px ;
+            background-color: $color-principal;
+            color: #FFF;
+            box-sizing: unset;
+            border-radius: 20px;
+            font-family: $fuente-texto;
+            .titulo-indice{
+                padding: 10px 0px;
+                font-size: 20px;
+                text-align: center;
+                list-style-type: none;
+                font-weight: 700;
+            }
+        }
+        .textoPrincipal{
+        
+            width: 80%;
+            padding: 0px 30px;
+            margin-left: 40px;
+            h3{
+                font-size: 48px;
+                font-family: $fuente-titulo;
+                margin: 15px 0px;
+            }
+            iframe{
+   
+                width: 90%;
+                box-sizing: unset;
+                padding: 5% ;
+                height: 550px;
+            }
+        
+        }
+        
+    
+    }
+    @include media-query-mobile(){
+        padding: 0;
+        margin: 0;
+        height: auto;
+        h2{
+            padding-left: 12px;
+            margin-bottom: 8px;
+            margin-top: 87px;
+        }
+        .cont-ideas{
+            flex-direction: column;
+            padding: 10px;
+            margin: 12px;
+            margin-top: 0px;
+            .indice{
+                position: unset;
+                top: unset;
+                left: unset;
+                width: 100%;
+                height: 400px;
+                padding: 0px;
+                box-sizing: unset;
+                nav{
+                    padding: 12px;
+                }
+                .titulo-indice{
+                    padding: 10px 0px;
+                    font-size: 20px;
+                    text-align: center;
+                    list-style-type: none;
+                    font-weight: 700;
+                }
+            
+            }
+            .textoPrincipal{
+                width: unset;
+                padding: 0px ;
+                margin-left: 0px;
+                h3{
+                    font-size: 38px;
+                }
+                iframe{
+                    height: 200px;
+                    box-sizing: unset;
+                }
+            
+            }
+        
+        }
+        
+    }
+
+}

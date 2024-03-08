@@ -1,0 +1,36 @@
+
+
+main{
+    background-color: #F5EEE6;
+    height: auto;
+    padding-left: 120px ;
+    padding-right: 120px ; 
+    padding-bottom: 120px;
+    box-sizing: unset;
+    h2{
+        font-family: $fuente-titulo;
+        font-size: $tamanio-h2-desktop;
+        color: $color-principal;
+        padding: 50px 0px;
+        margin-top: 75px;
+    
+    }
+    p{
+        font-size: $tamanio-p-desktop;
+        font-family:$fuente-texto;
+    }
+    @include media-query-mobile(){
+       
+        padding-left: 10px ;
+        padding-right: 10px ;
+   
+        h2{
+        font-size: 32px;
+        padding: 0px;
+        padding-top: 40px;
+        }
+        p{
+        font-size: $tamanio-p-phone;
+        }
+    }
+}

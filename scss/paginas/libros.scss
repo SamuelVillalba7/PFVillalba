@@ -1,0 +1,66 @@
+
+.main-libros{
+    .libro{
+        background-color: $color-principal;
+        padding: 15px;
+        width: auto;
+        margin-bottom: 24px;
+        box-sizing: border-box;
+
+        img{
+            width: 100%;
+            height: 350px;
+
+           
+        }
+        h3{
+            color: #FFF;
+            font-family: $fuente-texto;
+            font-size: 16px;
+            font-weight: 600;
+            
+            padding: 10px 0px;
+        }
+        .precio{
+            color: #FFF;
+            font-family: $fuente-texto;
+            font-size: 16px;
+            font-weight: 300;
+            padding-bottom: 15px;
+        }
+        .boton{
+    
+            border-radius: 10px;
+            background: #AD8286;
+            color: #FFF;
+            font-family: $fuente-texto;
+            font-size: 16px;
+            font-weight: 400;
+            
+        
+            padding: 3px 8px;
+        }
+       
+    }
+    @include media-query-mobile(){
+        padding: 12px;
+        box-sizing: border-box;
+        margin: 0;
+
+            img{
+                height: 230px ;
+            }   
+            h3{
+               
+                padding: 10px 0px 0px 0px;
+            
+            }
+            .precio{
+             
+                padding-bottom: 0px;
+            }
+
+        }
+    }
+
+

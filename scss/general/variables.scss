@@ -1,0 +1,25 @@
+@mixin media-query-mobile{
+    @media(max-width:576px){
+        @content;
+    }
+
+}
+
+
+$color-principal:#64273B;
+$fuente-titulo: 'Bebas Neue', sans-serif;
+$fuente-texto: 'Montserrat', sans-serif;
+$tamanio-p-desktop: 20px;
+$tamanio-p-phone:  18px;
+$tamanio-h2-desktop: 64px;
+$tamanio-h2-phone: 36px;
+
+// :root{
+//     --color-principal: 
+//     --fuente-titulo: 'Bebas Neue', sans-serif;
+//     --fuente-texto: 'Montserrat', sans-serif;
+//     --tamanio-p-desktop: 20px;
+//     --tamanio-p-phone:  18px;
+//     --tamanio-h2-desktop: 64px;
+//     --tamanio-h2-phone: 36px;
+// }
