@@ -332,7 +332,7 @@ iframe{
     top: 120px;
     left: 0;
     width: 20%;
-    height: 400px;
+    height: 330px;
     padding: 30px ;
     background-color: var(--color-principal);
     color: #FFF;
@@ -357,9 +357,9 @@ iframe{
     margin: 15px 0px;
 }
 .titulo-indice{
-    padding: 10px 0px;
+    padding: 5px 0px;
     font-size: 20px;
-    text-align: center;
+     text-align: center; 
     list-style-type: none;
     font-weight: 700;
 }
