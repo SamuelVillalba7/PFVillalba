@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 header {
   display: flex;
   position: fixed;
@@ -173,6 +178,7 @@ footer .pie-pagina {
 @media (max-width: 576px) {
   .main-home {
     height: auto;
+    padding-bottom: 12px;
   }
 }
 
@@ -186,7 +192,7 @@ footer .pie-pagina {
   background-repeat: no-repeat;
   background-size: cover;
   color: #FFF;
-  font-family: var(--fuente-titulo);
+  font-family: "Bebas Neue", sans-serif;
 }
 #hero h1 {
   font-size: 120px;
@@ -254,7 +260,7 @@ article .fondo-articulo .texto-articulo {
 }
 article .fondo-articulo .texto-articulo .titulo-art {
   font-size: 42px;
-  font-family: var(--fuente-titulo);
+  font-family: "Bebas Neue", sans-serif;
   color: #FFF;
   margin-bottom: 30px;
 }
@@ -271,7 +277,7 @@ article .fondo-articulo .texto-articulo .boton-articulo {
   border-radius: 10px;
   background-color: #AD8286;
   color: #FFF;
-  font-family: var(--fuente-texto);
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 400;
 }
@@ -361,6 +367,7 @@ article:last-of-type .fondo-articulo .texto-articulo {
   background-color: #0C0B10;
   height: 100vh;
   padding-left: 0;
+  padding-right: 0;
   padding-bottom: 0;
 }
 .main-contacto .cont-contacto {
@@ -461,7 +468,7 @@ article:last-of-type .fondo-articulo .texto-articulo {
   .main-contacto .cont-contacto .formulario {
     padding: 30px 30px 0px 30px;
     margin-top: unset;
-    background-image: url(../img/fondocontacto.png);
+    background-image: url(../img/contacto/fondocontacto.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -500,6 +507,14 @@ article:last-of-type .fondo-articulo .texto-articulo {
   text-align: center;
   list-style-type: none;
   font-weight: 700;
+}
+.main-ideas .cont-ideas .indice li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.main-ideas .cont-ideas .indice a {
+  text-decoration: none;
+  color: #FFF;
 }
 .main-ideas .cont-ideas .textoPrincipal {
   width: 80%;
@@ -607,13 +622,13 @@ article:last-of-type .fondo-articulo .texto-articulo {
     box-sizing: border-box;
     margin: 0;
   }
-  .main-libros img {
+  .main-libros .libro img {
     height: 230px;
   }
-  .main-libros h3 {
+  .main-libros .libro h3 {
     padding: 10px 0px 0px 0px;
   }
-  .main-libros .precio {
+  .main-libros .libro .precio {
     padding-bottom: 0px;
   }
 }

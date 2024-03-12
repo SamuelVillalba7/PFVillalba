@@ -4,6 +4,7 @@
     background-color:#0C0B10 ;
     height: 100vh;
     padding-left: 0;
+    padding-right: 0;
     padding-bottom: 0;
 
     .cont-contacto{
@@ -60,7 +61,9 @@
 
                 label{
                     width: 100%;
-                
+                  
+
+                                
                 }
                 .boton-formulario{
                     width: 100px;
@@ -106,7 +109,7 @@
                 padding-left: 12px;
                 font-size: 20px;
                 padding-right: 12px;
-                margin-bottom: 0;           
+                margin-bottom: 0;   
             }
             .foto{
                 margin-top: unset;
@@ -117,7 +120,7 @@
             .formulario{
                 padding:  30px 30px 0px 30px;
                 margin-top: unset; 
-                background-image: url(../img/fondocontacto.png);
+                background-image: url(../img/contacto/fondocontacto.png);
                 background-repeat: no-repeat;
                 background-size: contain;
                 background-position: bottom;

@@ -7,6 +7,8 @@
 
     @include media-query-mobile(){
         height: auto;
+        padding-bottom: 12px;
+
     }
     
     
@@ -22,7 +24,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: #FFF;
-    font-family: var(--fuente-titulo);
+    font-family: $fuente-titulo;
     h1 {
         font-size: 120px;
     }
@@ -96,7 +98,7 @@ article{
 
                 .titulo-art{
                 font-size: 42px;
-                font-family:var(--fuente-titulo);
+                font-family:$fuente-titulo;
                 color: #FFF;
                  margin-bottom: 30px ;
             
@@ -116,7 +118,7 @@ article{
                 border-radius: 10px;
                 background-color: #AD8286;
                 color: #FFF;
-                font-family: var(--fuente-texto);
+                font-family: $fuente-texto;
                 font-size: 20px;
                 font-weight: 400;
             
