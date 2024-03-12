@@ -283,6 +283,7 @@ article .fondo-articulo .texto-articulo .boton-articulo {
 }
 article .fondo-articulo .texto-articulo .boton-articulo a {
   color: #FFF;
+  text-decoration: none;
 }
 article:last-of-type .fondo-articulo {
   background-image: url(../img/home/f2.jpg);
@@ -614,6 +615,7 @@ article:last-of-type .fondo-articulo .texto-articulo {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  text-decoration: none;
   padding: 3px 8px;
 }
 @media (max-width: 576px) {
