@@ -106,7 +106,6 @@ main p {
   main h2 {
     font-size: 32px;
     padding: 0px;
-    padding-top: 40px;
     margin-top: 58px;
   }
   main p {
@@ -448,8 +447,7 @@ article:last-of-type .fondo-articulo .texto-articulo {
   .main-contacto .cont-contacto h2 {
     padding-left: 12px;
     padding-bottom: 20px;
-    margin-top: 75px;
-    padding-top: 55px;
+    padding-top: 40px;
   }
   .main-contacto .cont-contacto p {
     padding-left: 12px;
@@ -539,6 +537,7 @@ article:last-of-type .fondo-articulo .texto-articulo {
   .main-ideas h2 {
     padding-left: 12px;
     margin-bottom: 8px;
+    padding-top: 16px;
   }
   .main-ideas .cont-ideas {
     flex-direction: column;
@@ -582,6 +581,7 @@ article:last-of-type .fondo-articulo .texto-articulo {
 .main-libros .libro {
   background-color: #64273B;
   padding: 15px;
+  padding-bottom: 20px;
   width: auto;
   margin-bottom: 24px;
   box-sizing: border-box;
@@ -595,14 +595,14 @@ article:last-of-type .fondo-articulo .texto-articulo {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 600;
+  margin-bottom: 0;
   padding: 10px 0px;
 }
 .main-libros .libro .precio {
   color: #FFF;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
-  padding-bottom: 15px;
 }
 .main-libros .libro .boton {
   border-radius: 10px;
@@ -612,7 +612,7 @@ article:last-of-type .fondo-articulo .texto-articulo {
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
-  padding: 3px 8px;
+  padding: 5px 12px;
 }
 @media (max-width: 576px) {
   .main-libros {
@@ -628,6 +628,8 @@ article:last-of-type .fondo-articulo .texto-articulo {
   }
   .main-libros .libro .precio {
     padding-bottom: 0px;
+    margin-bottom: 8px;
+    margin-top: 3px;
   }
 }
 

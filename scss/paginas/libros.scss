@@ -3,6 +3,7 @@
     .libro{
         background-color: $color-principal;
         padding: 15px;
+        padding-bottom: 20px;
         width: auto;
         margin-bottom: 24px;
         box-sizing: border-box;
@@ -18,15 +19,15 @@
             font-family: $fuente-texto;
             font-size: 16px;
             font-weight: 600;
-            
+            margin-bottom: 0;
             padding: 10px 0px;
         }
         .precio{
             color: #FFF;
             font-family: $fuente-texto;
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 300;
-            padding-bottom: 15px;
+        
         }
         .boton{
     
@@ -37,9 +38,10 @@
             font-size: 16px;
             font-weight: 400;
             text-decoration: none;
+
             
         
-            padding: 3px 8px;
+            padding: 5px 12px;
         }
        
     }
@@ -56,11 +58,14 @@
             h3{
                
                 padding: 10px 0px 0px 0px;
+                
             
             }
             .precio{
              
                 padding-bottom: 0px;
+                margin-bottom: 8px;
+                margin-top: 3px;
             }
 
 

@@ -1,5 +1,6 @@
 
 .main-ideas{
+ 
     .cont-ideas{
         display: flex;
         background-color: #FFF;
@@ -63,7 +64,9 @@
         height: auto;
         h2{
             padding-left: 12px;
-            margin-bottom: 8px;
+            margin-bottom: 8px;    
+            padding-top: 16px; 
+            
             
         }
         .cont-ideas{
