@@ -61,14 +61,21 @@
     }
     h2{
         padding-top: 10px;
+        padding-bottom: 25px;
         margin-top: 0px;
     }
     @include media-query-mobile(){
         margin: 12px 12px 0px 12px;
         padding: 10px 10px 50px 10px;
+        h2{
+            padding-bottom: 10px;
+        }
         &:last-of-type{
             margin: 0px 12px;
             padding: 375px 10px 10px 10px;
+            h2{
+                margin-top: 15px;
+            }
         }
 
     }
@@ -151,7 +158,7 @@ article{
 
             .texto-articulo{
                 width: 100%;
-                height: 350px;
+                height: 380px;
                 padding: 0px;
                 
                 left: unset;
@@ -161,7 +168,7 @@ article{
                 .titulo-art{
                     font-size: 26px;
                     padding-left: 20px;
-                    padding-top: 20px;
+                    padding-top: 10px;
                     margin-bottom: unset;
                 }
                 
@@ -176,6 +183,7 @@ article{
                     height: 30px;
                     border-radius: 10px;
                     font-size: 12px;
+                    margin-top: 10px;
                     margin-left: 20px;
                     margin-bottom: unset;
                 }

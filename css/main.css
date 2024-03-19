@@ -95,7 +95,7 @@ main h2 {
   margin-top: 75px;
 }
 main p {
-  font-size: 20px;
+  font-size: 22px;
   font-family: "Montserrat", sans-serif;
 }
 @media (max-width: 576px) {
@@ -220,6 +220,7 @@ footer .pie-pagina {
 }
 .introduccion h2 {
   padding-top: 10px;
+  padding-bottom: 25px;
   margin-top: 0px;
 }
 @media (max-width: 576px) {
@@ -227,9 +228,15 @@ footer .pie-pagina {
     margin: 12px 12px 0px 12px;
     padding: 10px 10px 50px 10px;
   }
+  .introduccion h2 {
+    padding-bottom: 10px;
+  }
   .introduccion:last-of-type {
     margin: 0px 12px;
     padding: 375px 10px 10px 10px;
+  }
+  .introduccion:last-of-type h2 {
+    margin-top: 15px;
   }
 }
 
@@ -298,7 +305,7 @@ article:last-of-type .fondo-articulo .texto-articulo {
   }
   article .fondo-articulo .texto-articulo {
     width: 100%;
-    height: 350px;
+    height: 380px;
     padding: 0px;
     left: unset;
     top: 250px;
@@ -308,7 +315,7 @@ article:last-of-type .fondo-articulo .texto-articulo {
   article .fondo-articulo .texto-articulo .titulo-art {
     font-size: 26px;
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
     margin-bottom: unset;
   }
   article .fondo-articulo .texto-articulo .cuerpo-art {
@@ -321,6 +328,7 @@ article:last-of-type .fondo-articulo .texto-articulo {
     height: 30px;
     border-radius: 10px;
     font-size: 12px;
+    margin-top: 10px;
     margin-left: 20px;
     margin-bottom: unset;
   }
@@ -635,7 +643,7 @@ article:last-of-type .fondo-articulo .texto-articulo {
 
 .main-referentes .referente {
   display: flex;
-  background-color: #d9d9d9;
+  background-color: #fff;
   width: 100%;
   height: auto;
   margin-bottom: 60px;
@@ -645,7 +653,7 @@ article:last-of-type .fondo-articulo .texto-articulo {
   padding-right: 10px;
 }
 .main-referentes .referente img {
-  border: #d9d9d9 solid 1px;
+  border: #fff solid 1px;
   height: 300px;
   margin: 0;
   border-radius: 10px;
@@ -674,7 +682,7 @@ article:last-of-type .fondo-articulo .texto-articulo {
     width: 100%;
   }
   .main-referentes .referente .texto-referente h3 {
-    padding: 27px 0px;
+    padding: 0;
     text-align: center;
   }
   .main-referentes .referente .texto-referente p {
