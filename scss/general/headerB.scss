@@ -24,23 +24,25 @@
  position: relative;
   padding: 0px;
 
+  &:after {
+    content: "";
+    position: absolute;
+    background-color: #FFF;
+    height: 3px;
+     width: 0;
+     left: 0;
+     bottom: -10px;
+     transition: 0.3s;
+    }
+  &:hover {
+    color: #FFF;
+    &:after {
+      width: 100%;
+      }
+    }
+
 }
-.nav-link:after {
-content: "";
-position: absolute;
-background-color: #FFF;
-height: 3px;
- width: 0;
- left: 0;
- bottom: -10px;
- transition: 0.3s;
-}
-.nav-link:hover {
-color: #FFF;
-}
-.nav-link:hover:after {
-width: 100%;
-}
+
 
 .navbar-brand{
   font-size: 2rem;
@@ -63,6 +65,10 @@ width: 100%;
   .nav-link{
  
     margin-bottom: 5px;
+    &::after{
+      content: unset;
+    }
+
   }
   .nav-item:first-of-type{
     margin-top: 5px;

@@ -24,7 +24,6 @@
   position: relative;
   padding: 0px;
 }
-
 .nav-link:after {
   content: "";
   position: absolute;
@@ -35,11 +34,9 @@
   bottom: -10px;
   transition: 0.3s;
 }
-
 .nav-link:hover {
   color: #FFF;
 }
-
 .nav-link:hover:after {
   width: 100%;
 }
@@ -64,6 +61,9 @@
   }
   .nav-link {
     margin-bottom: 5px;
+  }
+  .nav-link::after {
+    content: unset;
   }
   .nav-item:first-of-type {
     margin-top: 5px;
